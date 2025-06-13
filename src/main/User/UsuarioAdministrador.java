@@ -1,4 +1,4 @@
-package User;
+package main.User;
 
 public class UsuarioAdministrador extends Persona implements administrador{
     

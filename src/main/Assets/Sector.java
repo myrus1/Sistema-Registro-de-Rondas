@@ -1,4 +1,4 @@
-package Assets;
+package main.Assets;
 
 import java.util.Vector;
 

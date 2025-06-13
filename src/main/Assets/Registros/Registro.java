@@ -1,4 +1,4 @@
-package Assets.Registros;
+package main.Assets.Registros;
 
 import java.util.Vector;
 

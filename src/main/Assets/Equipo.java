@@ -1,8 +1,8 @@
-package Assets;
-import Assets.Registros.Registro;
-
+package main.Assets;
 import java.util.Date;
 import java.util.Vector;
+
+import main.Assets.Registros.Registro;
 
 
 //Hoja del Composite

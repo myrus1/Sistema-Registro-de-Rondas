@@ -1,4 +1,4 @@
-package Exepciones;
+package main.Exepciones;
 
 public class PermisoDenegadoException extends RuntimeException {
   private static final String MENSAJE_POR_DEFECTO = "Solo un administrador puede modificar la frecuencia.";

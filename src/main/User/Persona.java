@@ -1,4 +1,4 @@
-package User;
+package main.User;
 
 public abstract class Persona implements administrador  {
     private String nombre ;

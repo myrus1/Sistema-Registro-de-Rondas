@@ -1,4 +1,4 @@
-package Assets.Registros;
+package main.Assets.Registros;
 
 public enum TipoDato {
     ENTERO {

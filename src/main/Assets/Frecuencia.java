@@ -1,4 +1,4 @@
-package Assets;
+package main.Assets;
 
 public class Frecuencia {
 }

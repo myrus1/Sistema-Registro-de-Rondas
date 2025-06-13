@@ -1,4 +1,4 @@
-package Assets.Registros;
+package main.Assets.Registros;
 
 public class CampoRegistro {
     private String nombre;
