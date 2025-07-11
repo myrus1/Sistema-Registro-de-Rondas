@@ -4,6 +4,7 @@ import java.util.Vector;
 
 //Componente del Composite
 public class Sector implements Componente{
+    
     private String nombre;
     private Vector<Componente> componetes = new Vector();
 

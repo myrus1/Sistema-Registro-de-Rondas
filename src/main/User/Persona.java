@@ -25,5 +25,11 @@ public abstract class Persona implements administrador  {
     }
 
 
+    public Persona(String nombre, int dni) {
+        this.nombre = nombre;
+        this.dni = dni;
+    }
+
+
     public abstract boolean isAdmin();
 }
