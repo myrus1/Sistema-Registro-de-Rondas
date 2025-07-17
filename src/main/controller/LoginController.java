@@ -1,6 +1,5 @@
 package main.controller;
 
-/*************  ✨ Windsurf Command 🌟  *************/
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -37,4 +36,3 @@ public class LoginController {
         }
     }
 }
-/*******  961a0a0b-02e6-4e02-ba1f-a2439d6a6797  *******/
