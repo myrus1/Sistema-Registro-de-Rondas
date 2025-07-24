@@ -6,7 +6,11 @@ import java.util.Vector;
 public class Sector implements Componente{
     
     private String nombre;
-    private Vector<Componente> componetes = new Vector();
+    private Vector<Componente> componetes = new Vector<>();
+
+    public Sector(String nombre) {
+        this.nombre = nombre;
+    }
 
     @Override
     public String getNombre() {

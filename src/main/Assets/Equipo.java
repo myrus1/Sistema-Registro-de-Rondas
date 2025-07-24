@@ -1,16 +1,14 @@
 package main.Assets;
-import java.util.Date;
-import java.util.Vector;
-
+//import java.util.Date;
 import main.Assets.Registros.Registro;
 
 
 //Hoja del Composite
 public class Equipo implements Componente {
     private String nombre;
-    private Date fechaIncorporacion;
-    private Frecuencia frecuencia;
     private Registro registro;
+    //private Frecuencia frecuencia;
+    //private Date fechaIncorporacion;
    
    
     public String getNombre() {
@@ -21,7 +19,16 @@ public class Equipo implements Componente {
         this.nombre = nombre;
     }
 
-    public Date getFechaIncorporacion() {
+    
+    public void setRegistro(Registro r){
+        this.registro=r;
+    }
+    
+    public Registro getRegistro() {
+        return registro;
+    }
+    
+    /*public Date getFechaIncorporacion() {
         return fechaIncorporacion;
     }
 
@@ -35,14 +42,5 @@ public class Equipo implements Componente {
 
     public void setFrecuencia(Frecuencia frecuencia) {
             this.frecuencia = frecuencia;
-    }
-
-    public void setRegistro(Registro r){
-        this.registro=r;
-    }
-
-    public Registro getRegistro() {
-        return registro;
-    }
-
+    }*/
 }
