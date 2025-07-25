@@ -73,5 +73,16 @@ public class Menu {
     }
   }
 
+  /* 
+  
+  ***Falta implementar la creación de equipos y registros***  
+  
+  public void crearEquipo(){
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Ingresa el nombre del equipo: ");
+    String nombre= scanner.nextLine();
 
+    
+  }
+  */
 }

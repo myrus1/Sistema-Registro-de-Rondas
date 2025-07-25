@@ -10,7 +10,12 @@ public class Equipo implements Componente {
     //private Frecuencia frecuencia;
     //private Date fechaIncorporacion;
    
-   
+    
+    public Equipo(String nombre, Registro registro) {
+        this.nombre = nombre;
+        this.registro = registro;
+    }
+    
     public String getNombre() {
         return nombre;
     }
