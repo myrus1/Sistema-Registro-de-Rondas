@@ -18,29 +18,32 @@ public class Menu {
       System.out.println("0. Salir");
       System.out.println("1. Crear sector");
       System.out.println("2. Mostrar sectores");
-      System.out.println("3. ...");
+      System.out.println("3. Borrar sector");
       System.out.print("Elige una opción: ");
       
       // Leer la opción del usuario
       opcion = scanner.nextInt();
-      scanner.close();
-
+      
       // Procesar la opción
       switch (opcion) {
         default:
-          System.out.println("Opción inválida. Intenta nuevamente.");
+        System.out.println("Opción inválida. Intenta nuevamente.");
           break;
           case 0:
-              System.out.println("Saliendo del programa... ¡Hasta luego!");
+          System.out.println("Saliendo del programa... ¡Hasta luego!");
               break;
           case 1:
-            crearSector();
+          crearSector();
+            break;
           case 2:
             mostrarSectores();
+            break;
           case 3:
+            borrarSector();
             break;
         }
-    }    
+      }    
+      scanner.close();
   }
 
 
@@ -49,12 +52,26 @@ public class Menu {
     System.out.print("Ingresa nombre Sector: ");
     String nombre = scanner.nextLine();
     componetes.add(new Sector(nombre));
-    scanner.close();    
+    //scanner.close();    
   }
 
+  public void borrarSector(){
+    Scanner scanner = new Scanner(System.in);
+    System.out.print("Ingresa el ID del sector a borrar: ");
+    try{
+      int id = scanner.nextInt();
+      componetes.remove(id);
+    }catch(Exception e){
+      System.out.println("Opción inválida. Intenta nuevamente.");
+    }
+    
+  }
   public void mostrarSectores(){
+    System.out.println("\nSectores:\n" );
     for (Componente componente : componetes) {
-      System.out.println(componente.getNombre());
+      System.out.println( componetes.indexOf(componente) + " - " + componente.getNombre());
     }
   }
+
+
 }
